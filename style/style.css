@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, p {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    padding: 0;
+    cursor: pointer;
+}
+
+body {
+    font-family: 'PTRootUI', sans-serif;
+    color: #333333;
+    background-color:#F2F2F2;
+}
+
+.wrapper {
+    padding: 2.5% 5.2% 0 4%;
+}
+
+.container {
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.top {
+    margin-bottom: 1.1%;
+}
+
+.top__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2.5%;
+}
+
+.top__title {
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 44px;
+}
+
+.button--blue {
+    color: #065CC2;
+    border: none;
+    font-size: 22px;
+    line-height: 28px;
+    background-color: transparent;
+}
+
+.order__container {
+    background-color: #FFFFFF;
+    padding: 2.3% 2.5%;
+}
+
+.delivery__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.03%;
+}
+
+.delivery__title {
+    font-weight: 700;
+    font-size: 29px;
+    line-height: 37px;
+}
+
+.arrow {
+    width: 40px;
+    height: 40px;
+    background: #FFFFFF;
+    border: 1px solid #D6D6D6;
+    border-radius: 4px;
+}
+
+.arrow--prev {
+    margin-right: 4px;
+}
+
+.arrow--disabled {
+    opacity: 0.25;
+    border: 1px solid #D6D6D6;
+    cursor: default;
+}
+
+.arrow__img--right {
+    transform: rotate(180deg)
+}
+
+.options {
+    display: flex;
+    margin-bottom: 0.85%;
+}
+
+.option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid #D6D6D6;
+    border-radius: 4px;
+    margin-right: 0.85%;
+    padding: 1.2%;
+    max-width: 489px;
+    height: 152px;
+}
+
+.option:last-child {
+    margin-right: 0;
+}
+
+.option--active {
+    border: 2px solid #065CC2;
+}
+
+.option__desc {
+    max-width: 82%;
+}
+
+.option__name {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: 0.13px;
+}
+
+.option__adress {
+    font-size: 22px;
+    line-height: 28px;
+}
+
+.option__price {
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: 0.13px
+}

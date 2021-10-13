@@ -5,11 +5,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+    <link rel="stylesheet" href="style/style.css">
     <title>Labirint</title>
 </head>
 
 <body>
+    <div class="wrapper">
+        <section class="top">
+            <div class="container top__container">
+                <h1 class="top__title">Оформление заказа</h1>
+                <button class="button button--blue">↑ Назад к корзине</button>
+            </div>
+        </section>
+        <section class="order">
+            <div class="container order__container">
+                <div class="delivery">
+                    <div class="delivery__top">
+                        <h2 class="delivery__title">Доставка</h2>
+                        <div class="delivery__arrows arrows">
+                            <button class="arrow arrow--prev arrow--disabled">
+                                <img src="image/arrow.svg" alt="стрелка влево" class="arrow__img">
+                            </button>
+                            <button class="arrow arrow--next">
+                                <img src="image/arrow.svg" alt="стрелка вправо" class="arrow__img arrow__img--right">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="delivery__options">
+                        <ul class="options">
+                            <li class="option option--active">
+                                <div class="option__desc">
+                                    <div class="option__name">Почта России, курьер — 24-26 сент.</div>
+                                    <p class="option__adress">ул. Академика Королева, 73/3, Петропавловск- Камчатский,
+                                        683000</p>
+                                </div>
+                                <div class="option__price">+367 ₽</div>
+                            </li>
+                            <li class="option">
+                                <div class="option__desc">
+                                    <div class="option__name">Лабиринт, курьер — 25 сент.</div>
+                                    <p class="option__adress">Можайское шоссе, д. 21, кв. 50, Москва, 121471</p>
+                                </div>
+                                <div class="option__price">0 ₽</div>
+                            </li>
+                        </ul>
+                        <button class="button button--blue">Выбрать новое место и способ</button>
+                    </div>
+                </div>
+                <div class="more">
 
+                </div>
+            </div>
+        </section>
+    </div>
 </body>
 
 </html>
