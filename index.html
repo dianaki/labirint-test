@@ -38,7 +38,7 @@
                             <li class="option option--active">
                                 <div class="option__desc">
                                     <div class="option__name">Почта России, курьер — 24-26 сент.</div>
-                                    <p class="option__adress">ул. Академика Королева, 73/3, Петропавловск- Камчатский,
+                                    <p class="option__address">ул. Академика Королева, 73/3, Петропавловск- Камчатский,
                                         683000</p>
                                 </div>
                                 <div class="option__price">+367 ₽</div>
@@ -46,16 +46,116 @@
                             <li class="option">
                                 <div class="option__desc">
                                     <div class="option__name">Лабиринт, курьер — 25 сент.</div>
-                                    <p class="option__adress">Можайское шоссе, д. 21, кв. 50, Москва, 121471</p>
+                                    <p class="option__subname">Можайское шоссе, д. 21, кв. 50, Москва, 121471</p>
                                 </div>
                                 <div class="option__price">0 ₽</div>
                             </li>
                         </ul>
                         <button class="button button--blue">Выбрать новое место и способ</button>
                     </div>
+                    <div class="delivery__date">
+                        <ul class="options options--date">
+                            <li class="option option--date option--active">
+                                <div class="option__name">пн, 24 сен — ср, 26 сен</div>
+                                <p class="option__subname">10:00–19:00</p>
+                            </li>
+                            <li class="option option--date">
+                                <div class="option__name">чт, 27 сен — пт, 28 сен</div>
+                                <p class="option__subname">10:00–19:00</p>
+                            </li>
+                        </ul>
+                        <button class="button button--blue">Другие дата и время</button>
+                    </div>
+                    <div class="delivery__controls">
+                        <form class="form">
+                            <ul class="controls">
+                                <li class="controls__item">
+                                    <input type="checkbox" class="controls__checkbox" id="notifications" checked>
+                                    <label class="controls__elem" for="notifications">Viber/СМС уведомления о статусе
+                                        заказа</label>
+                                </li>
+                                <li class="controls__item">
+                                    <input type="checkbox" class="controls__checkbox" id="no-contact" checked disabled>
+                                    <label class="controls__elem" for="no-contact">Оставить у двери (бесконтактная
+                                        доставка)</label>
+                                </li>
+                            </ul>
+                        </form>
+                    </div>
+                    <div class="delivery__recipient">
+                        <h2 class="delivery__title">Получатель</h2>
+                        <div class="recipient">
+                            <div class="recipient__name">
+                                <select name="name" class="select">
+                                    <option value="Вольфганг Вениаминович Константинопольский">Вольфганг
+                                        Вениаминович
+                                        Константинопольский
+                                    </option>
+                                </select>
+                                <button class="button button--blue">Новый получатель</button>
+                            </div>
+                            <div class="recipient__phone">
+                                <select name="phone" class="select">
+                                    <option value="+7 910 234-56-78">+7 910 234-56-78</option>
+                                </select>
+                                <button class="button button--blue">Новый телефон</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="delivery__payment">
+                        <h2 class="delivery__title">Оплата</h2>
+                        <ul class="options options--payment">
+                            <li class="option option--payment option--active">
+                                <div class="option__name">Предоплата на сайте</div>
+                                <div class="option__price">Скидка –3%</div>
+                            </li>
+                            <li class="option option--payment option--disabled">
+                                <div class="option__name">Оплата при получении</div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="more">
-
+                    <h2 class="more__title">В заказе 4 товара (2 кг)</h2>
+                    <div class="more__desc">
+                        <div class="more__row">
+                            <div class="row__title row__title--price">Цена товаров</div>
+                            <div class="row__number row__number--price">29 456 ₽</div>
+                        </div>
+                        <div class="more__row">
+                            <div class="row__title row__title--discount">Все скидки</div>
+                            <div class="row__number row__number--discount">–7 732 ₽</div>
+                        </div>
+                        <div class="more__row">
+                            <div class="row__title row__title--prepayment">Скидка за предоплату</div>
+                            <div class="row__number row__number--prepayment">–3%</div>
+                        </div>
+                        <div class="more__row">
+                            <div class="row__title row__title--delivery">
+                                <div class="row__address">Почта России, курьер, Академика Королева, 73/3, Петропавловск-
+                                    Камчатский, 683000</div>
+                                <div class="row__date">24 сентября, 10:00–19:00</div>
+                            </div>
+                            <div class="row__number row__number--delivery">+367 ₽</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bottom">
+            <div class="container bottom__container">
+                <div class="bottom__col bottom__col--left">
+                    <button class="button button--red">Оформить и оплатить</button>
+                    <div class="bottom__info info">
+                        <span class="info__title">Возврат невозможен.</span>
+                        <span class="info__desc">С выбранным способом доставки этот заказ можно будет забрать только
+                            целиком. Нельзя будет отказаться от части товаров или вернуть весь заказ</span>
+                        <button class="button button--blue button--bottom">Подробнее об этом</button>
+                    </div>
+                </div>
+                <div class="bottom__col bottom__col--right">
+                    <div class="total__title">Итого к оплате на сайте:</div>
+                    <div class="total__price">21 072 ₽</div>
                 </div>
             </div>
         </section>
